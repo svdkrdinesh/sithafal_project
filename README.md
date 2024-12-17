@@ -2,8 +2,6 @@
 
 This project allows users to upload PDF files, extract text, tables, and images, perform OCR on graphs/charts, and interact with the processed content using a conversational AI chatbot powered by **Groq LLM** and **FAISS** embeddings.
 
----
-
 ## Features
 
 1. **PDF Upload and Processing**
@@ -22,18 +20,19 @@ This project allows users to upload PDF files, extract text, tables, and images,
 4. **Data Persistence**
    - Saves FAISS vector store to a pickle file (`faiss_store_openai.pkl`) for future use.
 
----
-
 ## Installation
 
 ### Prerequisites
+
 Ensure you have the following tools installed:
 - Python (>=3.8)
 - pip
 - Tesseract OCR (for image text extraction)
 
 ### Install Dependencies
+
 Run the following command in your terminal:
 
 ```bash
 pip install streamlit pdfplumber pymupdf pdfminer.six pillow pytesseract langchain langchain-groq faiss-cpu sentence-transformers
+Streamlit run task1. py
