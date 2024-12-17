@@ -36,3 +36,32 @@ Run the following command in your terminal:
 ```bash
 pip install streamlit pdfplumber pymupdf pdfminer.six pillow pytesseract langchain langchain-groq faiss-cpu sentence-transformers
 Streamlit run task1. py
+
+# Web Crawling, Embedding, and Response Generation System
+
+This project crawls and scrapes text data from websites, generates embeddings for the scraped text, and then allows querying of the information using a pre-trained language model. The system uses the following components:
+
+- **Web Scraping**: Scrapes content from given URLs.
+- **Sentence Embeddings**: Embeds the scraped text using the `SentenceTransformer` model.
+- **FAISS Index**: Stores and searches the text embeddings using FAISS for fast retrieval.
+- **Query Handling**: Processes user queries by searching for the most relevant chunks of text.
+- **Response Generation**: Generates answers to user queries using a pre-trained GPT model.
+
+## Requirements
+
+To run this project, you'll need the following dependencies:
+
+- `requests`: For sending HTTP requests to websites.
+- `beautifulsoup4`: For scraping text content from the websites.
+- `sentence-transformers`: For generating sentence embeddings.
+- `faiss-cpu` or `faiss-gpu`: For building and querying the embedding index.
+- `scikit-learn`: For machine learning utilities.
+- `transformers`: For using pre-trained models for natural language processing.
+- `huggingface_hub`: For HuggingFace model integration.
+
+You can install the required dependencies using the following:
+
+```bash
+pip install ipywidgets
+Python task2.py 
+
