@@ -33,9 +33,9 @@ Ensure you have the following tools installed:
 
 Run the following command in your terminal:
 
-```bash
+bash
 pip install streamlit pdfplumber pymupdf pdfminer.six pillow pytesseract langchain langchain-groq faiss-cpu sentence-transformers
-Streamlit run task1. py
+Streamlit run task1. py 
 
 # Web Crawling, Embedding, and Response Generation System
 
